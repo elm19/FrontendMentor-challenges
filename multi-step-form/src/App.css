@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'usedFont'; /* The name you want to use for the font */
+    src: url('./assets/fonts/Ubuntu-Regular.ttf') format('truetype'); /* Path to your font file */
+    font-weight: 400; /* You can specify other font weights if needed */
+    font-style: normal; /* You can specify normal, italic, etc. */
+}
+
+body{
+    font-family: 'usedFont', sans-serif;
+    background-color: hsl(217, 100%, 97%);
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 100vh;
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+.App{
+    margin: 10px;
+    width: 65vw;
+    margin: auto;
+    display: flex;
+    padding: 16px;
+    height:74vh;
+    /* min-height: 400px; */
+    align-items: center;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+}
+
+.side-bar-desktop{
+    width: 30%;  /*Adjust width as needed */
+    height: 100%;
+    background-size: cover; /* Adjust to cover the entire div */
+    background-repeat: no-repeat; /* Prevent repeating */
+    background-position: center;
+    background-image: url('./assets/bg-sidebar-desktop.svg');
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: first baseline;
+    color: white;
+    padding: 24px 0px 0 16px;
+}
+.sidebar-text-container{
+    margin: 16px;
+    display: flex;
+    gap: 10px;
+}
+.step-text{
+    color:  hsl(231, 11%, 63%);
+}
+.sidebar-text-container span{
+    display: block;
+    font-weight: 700;
+    color: white;
+}
+.numberText{
+    border: solid 2px hsl(229, 24%, 87%);
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    text-align: center; 
+} 
+.colored{
+    background-color: #bee2f8;
+    color: black;
+}
+h1{
+    color: hsl(213, 96%, 18%);
+    font-weight: bold;
+}
+p{
+    padding-top: 10px;
+    color: hsl(231, 11%, 63%);
+    margin-bottom: 15px;
+}
+.buttons-container button{
+    width: 8vw;
+    height: 6vh;
+    min-width: 100px;
+    min-height: 35px;
+    color: white;
+    background-color: hsl(213, 96%, 18%);
+    border-radius: 10px;
+}
+
+.buttons-container button:hover {
+    cursor: pointer;
+    background-color: #174b87; /* Darker shade on hover */
+}
+.step-content{
+    padding-bottom: 5px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    justify-content: space-between;
+    margin-left: 7vw;
+    width: 47%;
+    height: 100%;
+}
+.buttons-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.side-bar-phone{
+    width: 100vw; 
+    height: 45vw;
+    max-height: 150px;
+    min-height: 172px;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('./assets/bg-sidebar-mobile.svg');
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    color: white;
+    padding: 32px 0px 0 16px;
+    z-index: -1;
+}
+
+@media (max-width: 768px) {
+    .content-step-with-no-buttons{
+        gap: 10px;
+        background-color: white;
+        border-radius: 15px;
+        padding: 25px;
+    }
+    /* body{
+        border:  solid 10px red;
+    } */
+    .App {
+
+        border-radius: 0;
+        background-color: transparent;
+        width: 100vw;
+        height: 100vh;
+        padding: 0;
+        flex-direction: column;
+        margin: 0;
+    }
+    .step-content{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: -97px;
+        width: 92vw;
+        gap: unset;
+        margin: auto;
+        margin-bottom: 100px;
+        /* height: 100vh; */
+        justify-content: space-between;
+    }
+
+    .side-bar-desktop {
+        display: none;
+    }
+    .buttons-container{
+        padding: 16px;
+        align-content: center;
+        position: absolute;
+        margin-left: -3vw;
+        top: 88vh;
+        width:100vw;
+        height: 73px;
+        
+        background-color: #fff; 
+    }    
+}

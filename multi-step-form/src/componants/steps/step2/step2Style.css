@@ -1,0 +1,105 @@
+.cards-container{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 12px;
+}
+/* .step-content{
+    background-color: #544E98;
+    border: solid 10px red;
+} */
+.card-container{
+    width: 138px;
+    padding: 15px;
+    border: solid 1px  hsl(229, 24%, 87%);
+    background-color: transparent;
+    text-align: left;
+    border-radius: 15px;
+    height: 160px;
+
+}
+.desc-container{
+    margin-top: 40px;
+    align-items: center;
+}
+button:hover{
+    cursor: pointer;
+    border-color: #544E98;
+}
+.card-selected{
+    border-color: #544E98;
+    background-color: #f8f9fe;
+}
+.img{
+    max-width: 40px;
+    max-height: 40px;  
+}
+
+.card-title{
+    color: hsl(213, 96%, 18%);
+    font-weight: bold;
+}
+.year-month{
+    margin-top: 40px;
+    display: flex;
+    width: 100%;
+    height: 50px;
+    background-color: #f8f9fe;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+.y-m-button{
+    width: 40px;
+    background-color: transparent;
+    color: #f8f9fe;
+    height: 20px;
+    display: flex;
+    border: none;
+    
+}
+.y-m-circle{
+    height: 15px;
+    width: 15px;
+    border-radius: 100%;
+    background-color: white;
+}
+.left-half-circle{
+    padding-left: 2px;
+
+    align-content: center;
+    background-color: #00275b;
+    height: 20px;
+    width: 20px;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+.right-half-circle{
+    padding-right: 2px;
+    align-content: center;
+    background-color: #00275b;
+    height: 20px;
+    width: 20px;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+@media (max-width: 768px) {
+    .cards-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: 12px;
+    }
+    .card-container{
+        width: 100%;
+        display: flex;
+        height: auto;
+        align-items:unset;
+        gap: 12px;
+    }    
+    .desc-container{
+        margin: 0;
+        position:relative;
+        top: 8px;
+    }
+
+}
