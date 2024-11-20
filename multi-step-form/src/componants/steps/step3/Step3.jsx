@@ -1,5 +1,6 @@
 import DesktopSideBar from "../../SideBar";
 import TitleDescription from "../../TitleDescription";
+import Step3Card from "./Step3Card";
 
 import './step3Style.css'
 
@@ -16,6 +17,11 @@ function Step3({previousStep, nextStep}) {
       <div className="step-content">
         <div className="content-step-with-no-buttons">
           <TitleDescription stepContent={stepContent}/>
+          < Step3Card 
+            title={"Online Service"} 
+            desc={"description"} 
+            price={"$9/mo"} 
+          />
         </div>
         <div className="buttons-container">
           <button className= "back-button" onClick={previousStep}>Go Back</button>
