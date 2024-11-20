@@ -16,7 +16,7 @@ function Step4({previousStep}) {
           <TitleDescription stepContent={stepContent}/>
         </div>
         <div className="buttons-container">
-          <button  onClick={previousStep}>back</button>
+          <button className= "back-button" onClick={previousStep}>Go Back</button>
         </div>
       </div>
     </>

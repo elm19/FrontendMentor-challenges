@@ -16,7 +16,6 @@ function Step2({previousStep, nextStep}) {
   }
   const [selected, setSelected] = useState(1);
   const [isMonthly, setisMonthly] = useState(true);
-
   
   return (
     <>
@@ -28,31 +27,34 @@ function Step2({previousStep, nextStep}) {
             < Card 
               myIcon={arcade} 
               cardTitle={"Arcade"} 
-              desc={"9"} 
+              desc={isMonthly? "$9/mo": "$90/yr"} 
               selected={selected === 1} 
               selectPlan={() => setSelected(1)}
+              isMonthly={isMonthly}
             />
 
             < Card 
               myIcon={pro} 
               cardTitle={"Pro"} 
-              desc={"12"} 
+              desc={isMonthly? "$12/mo": "$120/yr"} 
               selected={selected === 2}
               selectPlan={() => setSelected(2)}
+              isMonthly={isMonthly}
             />
             < Card 
               myIcon={advanced} 
               cardTitle={"Advanced"} 
-              desc={"15"} 
+              desc={isMonthly? "$15/mo": "$150/yr"}
               selected={selected === 3}
               selectPlan={() => setSelected(3)}
+              isMonthly={isMonthly}
             />
           </div>
           < YearMonthBar isMonthly={isMonthly} changeYM={() => setisMonthly(!isMonthly)}/>
         </div>
         <div className="buttons-container">
-          <button  onClick={previousStep}>back</button>
-          <button onClick={nextStep}>next</button>
+          <button className= "back-button" onClick={previousStep}>Go Back</button>
+          <button className="button-next" onClick={nextStep}>Next Step</button>
         </div>
         
       </div>

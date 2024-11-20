@@ -18,8 +18,8 @@ function Step3({previousStep, nextStep}) {
           <TitleDescription stepContent={stepContent}/>
         </div>
         <div className="buttons-container">
-          <button  onClick={previousStep}>back</button>
-          <button onClick={nextStep}>next</button>
+          <button className= "back-button" onClick={previousStep}>Go Back</button>
+          <button className="button-next" onClick={nextStep}>Next Step</button>
         </div>
       </div>
     </>

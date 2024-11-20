@@ -84,7 +84,8 @@ p{
     color: hsl(231, 11%, 63%);
     margin-bottom: 15px;
 }
-.buttons-container button{
+.button-next {
+    font-weight: bold;
     width: 8vw;
     height: 6vh;
     min-width: 100px;
@@ -93,8 +94,21 @@ p{
     background-color: hsl(213, 96%, 18%);
     border-radius: 10px;
 }
+.back-button{
+    font-weight: bold;
+    width: 8vw;
+    height: 6vh;
+    min-width: 100px;
+    min-height: 35px;
+    color: hsl(231, 11%, 63%);;
+    background-color: transparent;
+    border: none;
 
-.buttons-container button:hover {
+}
+.back-button:hover{
+    color: hsl(213, 96%, 18%);
+}
+.button-next:hover {
     cursor: pointer;
     background-color: #174b87; /* Darker shade on hover */
 }
@@ -114,8 +128,6 @@ p{
     justify-content: space-between;
     align-items: center;
 }
-
-
 
 .side-bar-phone{
     width: 100vw; 
@@ -141,9 +153,6 @@ p{
         border-radius: 15px;
         padding: 25px;
     }
-    /* body{
-        border:  solid 10px red;
-    } */
     .App {
 
         border-radius: 0;
@@ -175,10 +184,9 @@ p{
         align-content: center;
         position: absolute;
         margin-left: -3vw;
-        top: 88vh;
+        top: 100vh;
         width:100vw;
         height: 73px;
-        
         background-color: #fff; 
     }    
 }

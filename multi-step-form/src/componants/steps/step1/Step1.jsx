@@ -85,7 +85,7 @@ function Step1({nextStep}) {
             </div>
           </div>
           <div className="buttons-container button-step1">
-            <button type={"submit"}>next</button>
+            <button className="button-next" type={"submit"}>Next Step</button>
           </div>
         </form>
     </>

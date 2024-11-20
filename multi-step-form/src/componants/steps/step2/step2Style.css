@@ -3,10 +3,7 @@
     justify-content: space-evenly;
     gap: 12px;
 }
-/* .step-content{
-    background-color: #544E98;
-    border: solid 10px red;
-} */
+
 .card-container{
     width: 138px;
     padding: 15px;
@@ -18,9 +15,22 @@
 
 }
 .desc-container{
-    margin-top: 40px;
+    margin-top: 55px;
     align-items: center;
 }
+.yearly{
+    margin-top: 35px;
+}
+.desc-container p{
+    margin-top: -5px;
+    margin-bottom: 0;
+}
+
+.card-fr{
+    color: #57677e;
+    font-weight: 500;
+}
+
 button:hover{
     cursor: pointer;
     border-color: #544E98;
@@ -82,6 +92,10 @@ button:hover{
     border-top-right-radius: 50%;
     border-bottom-right-radius: 50%;
 }
+
+.buttons-container{
+    margin-top: -100px;
+}
 @media (max-width: 768px) {
     .cards-container{
         display: flex;
@@ -99,7 +113,7 @@ button:hover{
     .desc-container{
         margin: 0;
         position:relative;
-        top: 8px;
+        top: 4px;
     }
 
 }
